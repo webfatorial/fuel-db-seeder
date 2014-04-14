@@ -33,15 +33,26 @@ Configuration
 
 Add **db-seeder** to the always_load => packages, in the config.php
 
-Copy **config/db-seeder.php** to **app/config/db-seeder.php**.
+Copy **config/db-seeder.php** to **app/config/db-seeder.php**. In this file, you should place order call classes, which will be called to populate the database.
 
+Usage
+---
+
+In your project, you'll need to create the following structure:
 
 ```
 /fuel
     /app
         /classes
-            /seeds # seed classes
-                .
-                .
-                .
+            /seeds
 ```
+
+On folder **/seeds**, you'll create the seed classes. An example of that class can be found in **/exemples/pageseed.php**.
+
+With these classes created, and properly set in the **app/config/db-seeder.php**, you should run the command:
+
+```
+php oil r seed
+```
+
+After that, your database will be populated with data you set in the seeds classes.
