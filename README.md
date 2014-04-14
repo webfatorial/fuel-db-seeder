@@ -59,7 +59,7 @@ In your project, you'll need to create the following structure:
             /seeds
 ```
 
-On folder **/seeds**, you'll create the seed classes. An example of that class can be found in [**/examples/pageseed.php**](https://github.com/webfatorial/fuel-db-seeder/tree/develop/examples/pageseed.php).
+On folder **/seeds**, you'll create the seed classes. An example of that class can be found in [**/examples/pageseed.php**](https://github.com/webfatorial/fuel-db-seeder/blob/develop/examples/pageseeder.php).
 
 With these classes created, and properly set in the **app/config/db-seeder.php**, you should run the command:
 
@@ -76,5 +76,5 @@ Requirements of seeding classes
 2. Must be in the namespace **Seed**
 3. Must have a static method called **seed**
 
-All such obligations can be found at [**/examples/pageseed.php**](https://github.com/webfatorial/fuel-db-seeder/tree/develop/examples/pageseed.php).
+All such obligations can be found at [**/examples/pageseed.php**](https://github.com/webfatorial/fuel-db-seeder/blob/develop/examples/pageseeder.php).
 
