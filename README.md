@@ -31,7 +31,19 @@ Or download it manually and place in you packages directory.
 Configuration
 ---
 
-Add **db-seeder** to the always_load => packages, in the config.php
+Add **fuel-db-seeder** to the always_load => packages, in the config.php:
+
+```
+'always_load'  => array(
+    'packages'  => array(
+        // 'orm',
+        // 'auth',
+        // 'email',
+        // 'parser',
+        'fuel-db-seeder',
+    ),
+),
+```
 
 Copy **config/db-seeder.php** to **app/config/db-seeder.php**. In this file, you should place order call classes, which will be called to populate the database.
 
