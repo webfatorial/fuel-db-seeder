@@ -19,7 +19,8 @@
 return array(
 
     /**
-     * Sets the calling order of seed classes
+     * Sets the calling order of seed classes,
+     * in this example, UserSeeder will be called after PageSeeder
      */
     'order' => array(
         // 'PageSeeder', #example
