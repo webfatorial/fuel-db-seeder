@@ -31,7 +31,19 @@ Or download it manually and place in you packages directory.
 Configuration
 ---
 
-Add **db-seeder** to the always_load => packages, in the config.php
+Add **fuel-db-seeder** to the always_load => packages, in the config.php:
+
+```
+'always_load'  => array(
+    'packages'  => array(
+        // 'orm',
+        // 'auth',
+        // 'email',
+        // 'parser',
+        'fuel-db-seeder',
+    ),
+),
+```
 
 Copy **config/db-seeder.php** to **app/config/db-seeder.php**. In this file, you should place order call classes, which will be called to populate the database.
 
@@ -47,7 +59,7 @@ In your project, you'll need to create the following structure:
             /seeds
 ```
 
-On folder **/seeds**, you'll create the seed classes. An example of that class can be found in **/exemples/pageseed.php**.
+On folder **/seeds**, you'll create the seed classes. An example of that class can be found in [**/examples/pageseed.php**](https://github.com/webfatorial/fuel-db-seeder/tree/develop/examples/pageseed.php).
 
 With these classes created, and properly set in the **app/config/db-seeder.php**, you should run the command:
 
@@ -56,3 +68,13 @@ php oil r seed
 ```
 
 After that, your database will be populated with data you set in the seeds classes.
+
+Requirements of seeding classes
+---
+
+1. Must be in **/fuel/app/classes/seeds**
+2. Must be in the namespace **Seed**
+3. Must have a static method called **seed**
+
+All such obligations can be found at [**/examples/pageseed.php**](https://github.com/webfatorial/fuel-db-seeder/tree/develop/examples/pageseed.php).
+
