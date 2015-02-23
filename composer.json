@@ -1,0 +1,16 @@
+{
+    "name": "webfatorial/fuel-db-seeder",
+    "description" : "FuelPHP 1.x DB Seeder Package",
+    "type": "fuel-package",
+    "homepage": "https://github.com/webfatorial/fuel-db-seeder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "webfatorial",
+            "email": "webfatorial@webfatorial.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
